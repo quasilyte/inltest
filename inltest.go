@@ -1,3 +1,4 @@
+// Package inltest helps you to test that performance-sensitive funcs are inlineable.
 package inltest
 
 import (
