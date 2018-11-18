@@ -18,10 +18,6 @@ func Example() {
 		"errors": {
 			"New",
 		},
-
-		"strings": {
-			"(*Builder).WriteRune",
-		},
 	})
 	if err != nil {
 		log.Fatalf("inltest failed: %v", err)
@@ -33,5 +29,4 @@ func Example() {
 	// Output:
 	// github.com/Quasilyte/inltest.CheckInlineable: unhandled op RANGE
 	// github.com/Quasilyte/inltest.nonexisting: unknown reason
-	// strings.(*Builder).WriteRune: function too complex: cost 178 exceeds budget 80
 }
