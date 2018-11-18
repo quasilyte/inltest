@@ -9,6 +9,12 @@ Package inltest helps you to test that performance-sensitive funcs are inlineabl
 Usually should be used inside your tests, so you can see that some functions are
 not inlineable anymore due to, for example, cost increase during the last refactoring.
 
+> Note: please don't try to interpret returned "not inlined resons" slice.
+> Its contents may change from one Go version to another.
+> The only information you can safely rely on is whether function
+> is inlineable or not. And usually you want all functions from the
+> input map to be inlineable (otherwise why would you include them)?
+
 ## Installation
 
 ```bash
