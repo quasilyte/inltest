@@ -7,6 +7,7 @@ import (
 	"io"
 	"os/exec"
 	"regexp"
+	"sort"
 	"strings"
 )
 
@@ -14,6 +15,7 @@ import (
 //
 // Returns a list of reasons for symbols that were not proven to be
 // inlineable. If it's nil, then all symbols in candidates map are inlineable.
+// The returned string slice is sorted.
 //
 // The candidates maps import path to the symbols that should be checked.
 //
@@ -88,5 +90,6 @@ func CheckInlineable(candidates map[string][]string) ([]string, error) {
 	for fullName, reason := range notInlinedReason {
 		issues = append(issues, fullName+": "+reason)
 	}
+	sort.Strings(issues)
 	return issues, nil
 }
