@@ -1,6 +1,6 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/Quasilyte/inltest)](https://goreportcard.com/report/github.com/Quasilyte/inltest)
 [![GoDoc](https://godoc.org/github.com/Quasilyte/inltest?status.svg)](https://godoc.org/github.com/Quasilyte/inltest)
-
+[![Build Status](https://travis-ci.org/Quasilyte/inltest.svg?branch=master)](https://travis-ci.org/Quasilyte/inltest)
 
 # inltest
 
